@@ -5,7 +5,7 @@ class matrizes{
         
         int[][] matriz;
         int i,j;
-        int n_linhas = 4, n_colunas = 4, cont = 0, soma = 0;
+        int n_linhas = 4, n_colunas = 4, cont = 0;
         Scanner sc = new Scanner(System.in);
 
         matriz = new int[n_linhas][n_colunas];
@@ -13,16 +13,12 @@ class matrizes{
         for(i=0; i<n_linhas; i++){
             for(j=0; j<n_colunas; j++){
             matriz [i][j] = sc.nextInt(); 
-            //números menores do que 10...
-            
+                if (matriz [i][j] > 10){
+                    cont += 1;
+                }
             }   
         }
-
-        for(i=0;i<n_linhas;i++){
-            for(j=0;j<n_colunas;j++){
-                System.out.printf("%d ", matriz[i][j]); 
-            }
-            System.out.println();
-        }
+        
+        System.out.printf("%d valores maiores que 10", cont); 
     }
 }
