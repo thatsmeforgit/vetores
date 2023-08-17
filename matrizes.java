@@ -18,16 +18,16 @@ class matrizes{
                 // matriz[i][j] = valor; exemplo 2
                 // valor = valor + 10;
                 if(i==0){
-                    matriz [i][j] = 1; // exercicio 1 com matriz esse faz a primeira linha ficar tudo 1
+                    matriz [i][j] = 1; //linha 0 : 1 1 1 1 1 1 1
                 }else{
-                    if(i==n_linhas-1){
-                        matriz [i][j] = 1; // esse faz a ultima linha ficar tudo 1
+                    if(i==n_linhas-1){ // "n_linhas - 1" = última linha
+                        matriz [i][j] = 1; // 1 1 1 1 1 1 1 
                     }else{
                         if(j==0){
-                            matriz [i][j] = 1; // esse faz a primeira coluna ficar tudo 1
+                            matriz [i][j] = 1; //coluna 0 = 1 1 1 1 1 1 1
                         }else{
                             if(j==n_colunas-1){
-                                matriz[i][j] = 1; // esse faz a ultima coluna ficar tudo 1
+                                matriz[i][j] = 1; //coluna 6 = 1 1 1 1 1 1 1
                             }else{
                                 matriz[i][j] = 9; // essa completa o centro da matriz com 9
                             }
