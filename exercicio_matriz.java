@@ -13,24 +13,21 @@ class matrizes{
         for(i=0; i<n_linhas; i++){
             for(j=0; j<n_colunas; j++){
             matriz [i][j] = sc.nextInt(); 
-<<<<<<< HEAD
             
-            if( matriz [i][j]>=10){
-                cont += 1;
+                if( matriz [i][j]>=10){
+                    cont += 1;
+            
+                }   
             }
 
-            }   
-        }
-
-         System.out.printf("%d valores maiores que 10 ", cont); 
-=======
-                if (matriz [i][j] > 10){
+            System.out.printf("%d valores maiores que 10 ", cont); 
+            if (matriz [i][j] > 10){
                     cont += 1;
-                }
-            }   
-        }
-        
-        System.out.printf("%d valores maiores que 10", cont); 
->>>>>>> bccb9108852962af2410f2c18bea0f93a44058b1
+            }
+        } 
+        System.out.printf("%d valores maiores que 10", cont);   
     }
 }
+        
+        
+        
